@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001124;
+    color: #FFFFFF;
+    font-family: "Padauk", serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #499FFE;
+}
+img{
+    max-width: 100%;
+}
+
+label {
+    display: block;
+    text-transform: capitalize;
+}
+input{
+    width: 361px;
+    height: 43px;
+}
+
+input[type="submit"]{
+    margin-top: 11px;
+    background-color: #015FC7;
+    border: none;
+    width: 180px;
+    font-size: 20px;
+    font-family: 'Padauk';
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.window {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 180px;
+    gap: 105px;
+    padding: 10px 10px 10px 0;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.title {
+    font-family: "DM Serif Display", serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 42px;
+}
+
+
+
+.registration-form{
+    margin-top: 117px;
+    justify-content: space-evenly;
+}
+
+.reg-form > p{
+    margin-bottom: 11px;
+}
+
+.regSubmit{
+    margin-top: 37px !important ;
+}

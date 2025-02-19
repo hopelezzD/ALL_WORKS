@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio</title>
+</head>
+<style>
+    input[type="radio"]{
+        display: none;
+    }
+ input[type="radio"] + label span{
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    background: url(./social-test-radio.png) -26px -70px ;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+ }
+
+ input[type="radio"]:checked + label span{
+     background-position:  -134px -70px;
+     transition: 0.3s;
+ }
+ label{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+    
+</style>
+
+<body>
+    <p>
+        <input type="radio" name="radio" id="radio1"><label for="radio1"><span></span>radio1</label>
+    </p>
+    <p>
+        <input type="radio" name="radio" id="radio2"><label for="radio2"><span></span>radio2 </label>
+    </p>
+    <p>
+        <input type="radio" name="radio" id="radio3" checked><label for="radio3"><span></span> radio3</label>
+    </p>
+    <p>
+        <input type="radio" name="radio" id="radio4"><label for="radio4"><span></span> radio4</label>
+    </p>
+    <p>
+        <input type="radio" name="radio" id="radio5"><label for="radio5"><span></span>radio5 </label>
+    </p>
+</body>
+
+</html>

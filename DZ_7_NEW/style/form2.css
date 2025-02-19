@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Public Sans;
+    box-sizing: inherit;
+    background-color: #E5E5E5;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 16px;
+    background-color: #0050D8;
+    border-radius: 4px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+.container {
+    max-width: 904px;
+    padding: 0 44px;
+    margin: 0 auto;
+}
+
+.form2-title {
+    margin: 64px 0;
+}
+
+.information-text,
+.maternity-text,
+.use-text,
+.sys-info-text {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.forms {
+    display: flex;
+    gap: 32px;
+    border-bottom: 1px solid #D1D1D1;
+    margin-bottom: 32px;
+}
+
+.red {
+    color: #D83933;
+}
+
+.purple {
+    accent-color: #FF00FF;
+}
+
+input,
+select {
+    width: 392px;
+    border: 1px solid #ADADAD;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin-top: 8px;
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
+
+input[id="date4"] {
+    margin-bottom: 116px;
+}
+
+input[id="infoText"]::placeholder,
+input[id="Owner"]::placeholder {
+    color: #0050D8;
+}
+
+.arrow
+{
+    position: absolute;
+    right: 15px;
+    bottom: 13px;
+}
+.scope{
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+}
+
+form p {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+form p label {
+    font-weight: 500;
+}
+.maternity-info{
+    margin-bottom: 32px;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+.maternity-form {
+    display: flex;
+    align-items: flex-end;
+}
+.p-checkbox{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}

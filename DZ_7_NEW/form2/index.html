@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/form2.css">
+    <title>Form 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="form2-title">Intake Main Flow</h2>
+        <p class="form2-text"><span class="text-star red">*</span> Mandatory field</p>
+        <section class="information">
+            <p class="information-text">Information</p>
+            <div class="information-forms forms">
+                <form>
+                    <p>
+                        <label for="intakeType">Intake Type<span class="red">* (select)</span></label><br>
+                        <select name="intakeType" id="intakeType">
+                            <option value="Referral">Referral</option>
+                            <option value="Referral">Referral</option>
+                            <option value="Referral">Referral</option>
+                            <option value="Referral" selected>Referral</option>
+                            <option value="Referral">Referral</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="tel">phone</label><br>
+                        <input type="tel" id="tel">
+                    </p>
+                    <p>
+                        <label for="email">email</label><br>
+                        <input type="email" id="email">
+                    </p>
+                    <p>
+                        <label for="infoText">Application Registration (Optional)</label><br>
+                        <input type="text" id="infoText" placeholder="APP0000116">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                    <p>
+                        <label for="date1">Additional Information Requested Date (Optional)</label><br>
+                        <input type="date" id="date1">
+                    </p>
+                    <p>
+                        <label for="infoText2">Remaining Days Before Referral is Purged (Optional)</label><br>
+                        <input type="text" id="infoText2">
+                    </p>
+                    <p>
+                        <label for="date2">Fee Payment Date (Optional)</label><br>
+                        <input type="date" id="date2">
+                    </p>
+                    <p class="p-checkbox">
+                        <input type="checkbox" id="chkbox" class="purple" checked><label for="chkbox">Application Fee
+                            Processed</label>
+                    </p>
+                </form>
+                <form>
+                    <p>
+                        <label for="date3">Enrollment Initiation Date jquery</label><br>
+                        <input type="date" id="date3" value="05/11/2021" disabled>
+                    </p>
+                    <p>
+                        <label for="childSupport">Application Category<span class="red">*</span></label><br>
+                        <input type="text" id="childSupport" placeholder="Child Support">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                    <p>
+                        <label for="date4">Enrollment Submission Date (Optional)</label><br>
+                        <input type="date" id="date4" disabled placeholder="DD/MM/YYYY">
+                    </p>
+                    <p class="p-checkbox">
+                        <input type="checkbox" id="purged" class="purple">
+                        <label for="purged">Purged</label>
+                    </p>
+                    <p>
+                        <label for="paternity">Exempt from Paternity (Optional) (select)</label><br>
+                        <select name="" id="paternity">
+                            <option value="one">No</option>
+                            <option value="two">Yes</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="workList">Enrollment Status (Optional)</label><br>
+                        <input type="text" id="workList" placeholder="Worklisted">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                </form>
+
+            </div>
+        </section>
+        <section class="maternity-info">
+            <p class="maternity-text">Maternity Information</p>
+            <form class="maternity-form">
+                <p class="p-checkbox">
+                    <input type="checkbox" name="" id="child" class="purple">
+                    <label for="child">Are you requesting child support services for an
+                        unborn child?</label>
+                </p>
+                <p>
+                    <label for="biological">Other known biological parent? (Optional)</label><br>
+                    <input type="text" name="" id="biological" placeholder="None">
+                    <img src="../img/arrow-down.svg" alt="" class="arrow">
+                </p>
+            </form>
+        </section>
+        <section class="official-use">
+            <p class="use-text">Official Use</p>
+            <div class="official-use-forms forms">
+                <form>
+                    <p><label for="">Case Category (select)</label><br>
+                        <select name="" id="">
+                            <option value="Active IV-A">Active IV-A</option>
+                            <option value="Active III-A">Active III-A</option>
+                            <option value="Active II-A">Active II-A</option>
+                        </select>
+                    </p>
+                    <p><label for="">Arrears Only Indicator (Optional)</label><br>
+                        <input type="text" name="" id="" disabled placeholder="None">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                    <p><label for="">Assigned County of Ownership (Optional)</label><br>
+                        <input type="text" name="" id="" disabled placeholder="None">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                    <p><label for="">Intergovermental Case Status (details)</label><br>
+                        <input type="text" name="" id="" disabled placeholder="None">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                    <p><label for="">Special Handling Indicator for Applicant (Optional)</label><br>
+                        <input type="text" name="" id="" disabled placeholder="None">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                    <p><label for="">Special Handling Indicator for Other Parent
+                            (Optional)</label><br>
+                        <input type="text" name="" id="" disabled placeholder="None">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                </form>
+                <form>
+                    <p><label for="IV-D">IV-D Indicator<span class="red">*</span></label><br>
+                        <input type="text" name="IV-D" id="IV-D" placeholder="Non-IV-D">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                    <p><label for="intergovernmentalCategory">Intergovernmental Case Category (Optional)</label><br>
+                        <input type="text" name="" id="intergovernmentalCategory" disabled placeholder="None">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                    <p><label for="intergovernmentalType">Intergovernmental Case Type (Optional)</label><br>
+                        <input type="text" name="" id="intergovernmentalType" disabled placeholder="None">
+                        <img src="../img/arrow-down.svg" alt="" class="arrow">
+                    </p>
+                    <p><label for="CaseNumber">Case Number</label><br>
+                        <input type="text" name="" id="CaseNumber" disabled placeholder="None">
+                        <img src="../img/scope.svg" alt="" class="scope">
+                    </p>
+                    <p><label for="ReferralNumber">Referral Number</label><br>
+                        <input type="text" name="" id="ReferralNumber" disabled placeholder="None">
+                        <img src="../img/scope.svg" alt="" class="scope">
+                    </p>
+                </form>
+            </div>
+        </section>
+        <section class="sys-info">
+            <p class="sys-info-text">System Information</p>
+            <div class="sys-info-forms forms">
+                <form>
+                    <p>
+                        <label for="Enrollment">Enrollment Taken by User </label><br>
+                        <input type="text" name="Enrollment" id="Enrollment" placeholder="Search Input">
+                        <img src="../img/scope.svg" alt="" class="scope">
+                    </p>
+                    <p>
+                        <label for="Worker">Worker (Optional)</label><br>
+                        <input type="text" name="Worker" id="Worker" placeholder="Search Input">
+                        <img src="../img/scope.svg" alt="" class="scope">
+                    </p>
+                </form>
+                <form>
+                    <p>
+                        <label for="Supervisor">Intake Supervisor (Optional)</label><br>
+                        <input type="text" name="Supervisor" id="Supervisor" disabled placeholder="Search">
+                        <img src="../img/scope.svg" alt="" class="scope" >
+                    </p>
+                    <p>
+                        <label for="Owner">Owner (Optional)</label><br>
+                        <input type="text" name="Owner" id="Owner" placeholder="Rajaneesh Banal" >
+                        <img src="../img/scope.svg" alt="" class="scope">
+                    </p>
+                </form>
+            </div>
+        </section>
+        <button class="button">
+            <a href="#">Next</a>
+        </button>
+    </div>
+
+
+</body>
+
+</html>
