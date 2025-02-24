@@ -1,0 +1,270 @@
+@import url(./normalize.css);
+/* @import url(./new-normalize.css); */
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+
+:root {
+    font-family: 'Rosario', sans-serif;
+    box-sizing: border-box;
+}
+ input{
+    box-sizing: border-box;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ textarea,
+ ul{
+    margin: 0;
+    padding: 0;
+ }
+ 
+section {
+    height: 100vh;
+    border: 1px solid black;
+}
+img{
+    max-width: 100%;
+    
+}
+
+.first-section {
+    height: 88vh;
+}
+
+.container {
+    max-width: 1940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 111;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+
+}
+
+.header-logo {
+    display: block;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-nav {
+    width: 60%;
+}
+ a{
+     text-decoration: none;
+     font-style: italic;
+     color:inherit;
+
+ }
+.nav-item a {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFCFC;
+    padding: 15px 0;
+    flex-shrink: 1;
+    display: block;
+}
+
+.box {
+    display: flex;
+    margin-top: 71px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo-left,
+.photo-right {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.services {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.services-items {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.item-text {
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.service-item {
+    margin-bottom: 31px;
+}
+
+.team-title {
+    font-size: 96px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    margin: 142px 0 51px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-box{
+    position: relative;
+}
+.team-pic {
+    border-radius: 40px;
+    display: block;
+    background-color: #000000;
+
+}
+.card-box::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000000;
+    opacity: 0.7;
+    display: none;
+    border-radius: 40px;
+}
+.team-cards:hover .card-box::before {
+    display: block;
+    
+}
+.card-box::after {
+    font-family: 'Volkhov';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+    content: attr(data-title);
+    font-size: 48px;
+    font-weight: 400;
+    color: #FFFAFA;
+    border-radius:0 0 40px 40px;
+    background-color: #A3530A;
+    opacity: 0.7;
+    text-transform: capitalize;
+    padding: 52px 100px;
+}
+
+.card-box:hover::after {
+    display: block;
+}
+
+.card-box:hover::before{
+    display: none !important;
+}
+
+.footer-container{
+    text-align: center;
+    margin-top: 201px;
+}
+.footer-title{
+    font-size: 64px;
+    font-weight: 700;
+    font-style: italic;
+    padding-right: 100px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.footer-form{
+    flex-basis: 57%;
+}
+.footer-form input{
+    border: 20px solid #E5E5E5;
+    width: 445px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #00000072;
+    padding: 10px;
+}
+.footer-info{
+    display: flex;
+    margin-bottom: 75px;
+    gap: 34px;
+}
+textarea{
+    border: 30px solid #E5E5E5;
+    resize: none;
+    columns: 40;
+    width: 830px;
+    height: 230px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #00000072;
+}
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    gap: 75px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.bold
+{
+    font-weight: 700;
+    font-style: normal;
+}
+.hours-title{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.hours-text{
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0;
+}
+.footer-social{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.social-list{
+    list-style: none;
+    padding-left:40px
+ }
+.social-item a{
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
