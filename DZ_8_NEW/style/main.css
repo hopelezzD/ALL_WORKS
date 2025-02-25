@@ -7,26 +7,29 @@
     font-family: 'Rosario', sans-serif;
     box-sizing: border-box;
 }
- input{
+
+input {
     box-sizing: border-box;
- }
- h1,
- h2,
- h3,
- h4,
- textarea,
- ul{
+}
+
+h1,
+h2,
+h3,
+h4,
+textarea,
+ul {
     margin: 0;
     padding: 0;
- }
- 
+}
+
 section {
     height: 100vh;
     border: 1px solid black;
 }
-img{
+
+img {
     max-width: 100%;
-    
+
 }
 
 .first-section {
@@ -38,6 +41,7 @@ img{
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
+    overflow: hidden;
 
 }
 
@@ -63,17 +67,18 @@ header {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    padding-right: 25px;
+    gap: 30px;
 }
 
-.menu-nav {
-    width: 60%;
-}
- a{
-     text-decoration: none;
-     font-style: italic;
-     color:inherit;
 
- }
+a {
+    text-decoration: none;
+    font-style: italic;
+    color: inherit;
+
+}
+
 .nav-item a {
     font-size: 36px;
     font-weight: 700;
@@ -90,11 +95,26 @@ header {
     align-items: center;
 }
 
-.photo-left,
-.photo-right {
+.photo-left {
+    animation: photosLeft 3.5s linear 1;
+}
+
+.photos-left {
     display: flex;
     flex-direction: column;
     gap: 42px;
+    animation: photosLeft 2.5s linear 1;
+}
+
+.photos-right {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    animation: photosRight 2.5s linear 1;
+}
+
+.photo-right {
+    animation: photosRight 3.5s linear 1;
 }
 
 .services {
@@ -134,19 +154,24 @@ header {
     display: flex;
     justify-content: space-evenly;
 }
-.card-box{
+
+.card-box {
+    margin-bottom: 20px;
     position: relative;
+    cursor: pointer;
 }
+
 .team-pic {
     border-radius: 40px;
     display: block;
     background-color: #000000;
 
 }
-.card-box::before{
+
+.card-box::before {
     content: "";
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
@@ -156,10 +181,12 @@ header {
     display: none;
     border-radius: 40px;
 }
+
 .team-cards:hover .card-box::before {
     display: block;
-    
+
 }
+
 .card-box::after {
     font-family: 'Volkhov';
     position: absolute;
@@ -172,26 +199,29 @@ header {
     font-size: 48px;
     font-weight: 400;
     color: #FFFAFA;
-    border-radius:0 0 40px 40px;
+    border-radius: 0 0 40px 40px;
     background-color: #A3530A;
     opacity: 0.7;
     text-transform: capitalize;
     padding: 52px 100px;
+
+
 }
 
 .card-box:hover::after {
     display: block;
 }
 
-.card-box:hover::before{
+.card-box:hover::before {
     display: none !important;
 }
 
-.footer-container{
+.footer-container {
     text-align: center;
     margin-top: 201px;
 }
-.footer-title{
+
+.footer-title {
     font-size: 64px;
     font-weight: 700;
     font-style: italic;
@@ -199,10 +229,12 @@ header {
     text-align: center;
     margin-bottom: 25px;
 }
-.footer-form{
+
+.footer-form {
     flex-basis: 57%;
 }
-.footer-form input{
+
+.footer-form input {
     border: 20px solid #E5E5E5;
     width: 445px;
     font-size: 36px;
@@ -210,12 +242,14 @@ header {
     color: #00000072;
     padding: 10px;
 }
-.footer-info{
+
+.footer-info {
     display: flex;
     margin-bottom: 75px;
     gap: 34px;
 }
-textarea{
+
+textarea {
     border: 30px solid #E5E5E5;
     resize: none;
     columns: 40;
@@ -225,42 +259,49 @@ textarea{
     font-weight: 700;
     color: #00000072;
 }
-.contacts{
+
+.contacts {
     display: flex;
     justify-content: space-around;
     gap: 75px;
 }
-.contact{
+
+.contact {
     display: flex;
     flex-direction: column;
     font-size: 30px;
 }
-.bold
-{
+
+.bold {
     font-weight: 700;
     font-style: normal;
 }
-.hours-title{
+
+.hours-title {
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 25px;
 }
-.hours-text{
+
+.hours-text {
     font-weight: 600;
     font-size: 30px;
     font-style: italic;
     margin: 0;
 }
-.footer-social{
+
+.footer-social {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
 }
-.social-list{
+
+.social-list {
     list-style: none;
-    padding-left:40px
- }
-.social-item a{
+    padding-left: 40px
+}
+
+.social-item a {
     gap: 25px;
     display: flex;
     align-items: center;
@@ -268,3 +309,110 @@ textarea{
     font-size: 30px;
 }
 
+
+.service-item:first-child {
+    font-weight: 800;
+    animation: serviceTopLeft 5s infinite;
+}
+.service-item:nth-child(2) {
+    font-weight: 800;
+    animation: serviceTopRight 5s infinite;
+}
+
+.service-item:nth-child(3) {
+    font-weight: 800;
+    animation: serviceDownleft 5s infinite;
+}
+.service-item:last-child{
+    animation: serviceDownRight 5s infinite;
+}
+/* ANIMATION  FIRST PAGE ( GALLERY )
+------------------------------------------------------------------------------------------------------- */
+
+@keyframes photosLeft {
+    from {
+        transform: translateX(-250%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes photosRight {
+    from {
+        transform: translateX(+250%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+
+}
+
+
+/* ANIMATION SECOND PAGE ( SERVICES )
+------------------------------------------------------------------------------------------------------- */
+
+@keyframes serviceTopLeft {
+    25% {
+        transform: translateX(135%);
+    }
+
+    50% {
+        transform: translate(135%,108%);
+        
+    }
+
+    75% {
+        transform: translate(0, 108%);
+    }
+
+}
+
+@keyframes serviceTopRight {
+    25% {
+        transform: translate(0 , 108%);
+    }
+
+    50% {
+        transform: translate(-135% , 108%);
+        
+    }
+
+    75% {
+        transform: translate(-135%, 0);
+    }
+
+}
+@keyframes serviceDownleft {
+    25% {
+        transform: translate(0, -108%);
+    }
+
+    50% {
+        transform: translate(135% , -108%);
+        
+    }
+
+    75% {
+        transform: translate(135%, 0);
+    }
+
+}
+@keyframes serviceDownRight {
+    25% {
+        transform: translate(-135%, 0);
+    }
+
+    50% {
+        transform: translate(-135% , -108%);
+        
+    }
+
+    75% {
+        transform: translate(0, -108%);
+    }
+
+}
