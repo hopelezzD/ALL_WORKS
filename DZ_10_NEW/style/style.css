@@ -1,0 +1,38 @@
+body{
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+}
+.my-height{
+    height: 300px;
+}
+
+footer{
+    background-color: #212529;
+    text-align: center;
+    margin-top: 72px;
+}
+.cards{
+    margin-top: 72px;
+}
+.my-card{
+    border: none;
+    text-align: center;
+    position: relative;
+}
+.my-badge{
+    position: absolute;
+    top:8px;
+    right: 8px;
+    Sale
+}
+.copyright{
+    padding: 48px 10px;
+    color: #FFFFFF;
+}
+.price-decor{
+    text-decoration: line-through;
+    color: #6C757D;
+}
