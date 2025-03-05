@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior:smooth;
 }
 
 *,
@@ -423,7 +424,7 @@ header {
 }
 .nav-menu--active .nav__menu-items{
     transform: translateY(0%);
-    scroll-behavior: none;
+    scroll-behavior: smooth;
 }
 
 

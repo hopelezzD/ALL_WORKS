@@ -1,0 +1,29 @@
+:root{
+        background-color: #212529;
+}
+.container{
+    max-width: 1250px;
+    margin: auto;
+}
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(8,100px);
+    justify-items: center;
+    align-items: center;
+    gap:5px;
+}
+.img-item:nth-child(3),
+.img-item:first-child{
+    grid-row: 1/6;
+}
+.img-item:nth-child(2){
+    grid-row:1/4;
+}
+.img-item:nth-child(4),
+.img-item:last-child{
+    grid-row:6/-1;
+}
+.img-item:nth-child(5){
+    grid-row:4/9;
+}

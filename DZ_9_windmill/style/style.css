@@ -1,24 +1,28 @@
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0 auto;
     box-sizing: inherit;
 }
-img{
+
+img {
     max-width: 100%;
 }
-.box-mill{
-    margin:50px auto;
+
+.box-mill {
+    margin: 50px auto;
     text-align: center;
     background-color: rgb(137, 182, 215);
     width: 800px;
     height: 600px;
     aspect-ratio: 1/1;
-    background-image: url(../img/ground.png),url(../img/mountain1.png),url(../img/mountain2.png),url(../img/windmill.png), url(../img/mountain3.png);
-    background-position: 0 150px, 255px 320px, 180px 291px,600px 220px, 88px 170px;
+    background-image: url(../img/ground.png), url(../img/mountain1.png), url(../img/mountain2.png), url(../img/windmill.png), url(../img/mountain3.png);
+    z-index: 1;
+    background-position: 0 150px, 255px 320px, 180px 291px, 600px 220px, 88px 170px;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
@@ -26,50 +30,56 @@ img{
     align-items: flex-start;
 }
 
-.clouds-img{
-    animation: clouds 21s linear infinite;
+.clouds-img {
+    animation: clouds 23s linear infinite;
     position: absolute;
     z-index: 10;
-    top:20px;
+    top: 20px;
 }
-.clouds2-img{
-    animation: clouds 21s linear infinite 7s;
+
+.clouds2-img {
+    animation: clouds 24s linear infinite 8s;
     position: absolute;
-    top:30px;
-    z-index: 10;
-    transform: translateX(100%);
-}
-.clouds3-img{
-    animation: clouds 21s linear infinite 14s;
-    position: absolute;
-    top:30px;
+    top: 30px;
     z-index: 10;
     transform: translateX(100%);
 }
-.moon-img{
+
+.clouds3-img {
+    animation: clouds 22s linear infinite 16s;
     position: absolute;
-    top:0px;
-    left:0px;
+    top: 30px;
+    z-index: 10;
+    transform: translateX(100%);
 }
-.snowflake-box{
+
+.moon-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.snowflake-box {
     position: relative;
     width: calc(800px/6);
     height: 100%;
 }
-.snow-flake1{
+
+.snow-flake1 {
     animation: snowFalls 12s linear infinite;
 }
 
-.snow-flake2{
+.snow-flake2 {
     animation: snowFalls 11s linear infinite 5s;
 }
 
-.snow-flake3{
+.snow-flake3 {
     animation: snowFalls2 9s linear infinite 6s;
 }
-.img-loap{
+
+.img-loap {
     position: absolute;
-    bottom:240px;
+    bottom: 240px;
     right: 78px;
     animation: millRotation 10s linear infinite;
 }
@@ -78,48 +88,54 @@ img{
 ______________________________________________________ */
 
 @keyframes clouds {
-    from{
+    from {
         transform: translateX(100%);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
-    
+
 }
 
 @keyframes snowFalls {
-    from{
-        transform: translate(-15px,-15px);
+    from {
+        transform: translate(-15px, -15px);
     }
-    50%{
-        transform: translate(67px,300px);
+
+    50% {
+        transform: translate(67px, 300px);
     }
-    to
-    {
-        transform:translate(-60px,500px) ;
+
+    to {
+        transform: translate(-60px, 500px);
 
     }
-    
+
 }
+
 @keyframes snowFalls2 {
-    from{
-        transform: translate(-15px,-15px);
+    from {
+        transform: translate(-15px, -15px);
     }
-    50%{
-        transform: translate(-60px,300px);
+
+    50% {
+        transform: translate(-60px, 300px);
     }
-    to
-    {
-        transform:translate(67px,500px) ;
+
+    to {
+        transform: translate(67px, 500px);
 
     }
-    
+
 }
-@keyframes millRotation{
-    from{
-        transform: rotate(10deg);
+
+@keyframes millRotation {
+    from {
+        transform: rotate(0deg);
     }
-    to{
-        transform: rotate(360deg);
+
+    to {
+        transform: rotate(-360deg);
     }
 }
