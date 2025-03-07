@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+
+    &::before {
+        box-sizing: inherit;
+    }
+
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+:root {
+    img{
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-display: swap;
+    color: #FFF;
+    font-size: 30px;
+
+    .box {
+        background-color: #000000;
+        min-height: 100vh;
+        overflow: hidden;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .decor-blue {
+            color: #001FDB;
+        }
+
+        .nav {
+            display: flex;
+            padding-top: 63px;
+            margin: 0 95px 80px;
+            justify-content: space-between;
+            align-items: center;
+
+            .company-name {
+                font-size: 60px;
+                font-weight: 400;
+
+            }
+
+            .nav-list {
+                list-style: none;
+                display: flex;
+                gap: 48px;
+
+                .my-shake {
+                    animation: shakeX 2s infinite;
+                }
+                .my-swing{
+                    animation: swing 2s infinite;
+                }
+                .my-woble{
+                    animation: wobble 2s infinite;
+                }
+            }
+            .my-pulse{
+                animation: pulse 1s infinite;
+            }
+
+            .btn-header {
+                padding: 15px 43px;
+                border: 1px solid #FFF;
+            }
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+        }
+
+        .left {
+            width: 50%;
+            margin-left: 68px;
+
+            .name {
+                font-size: 64px;
+                font-weight: 800;
+                animation: leftAnimation 1s linear 1 forwards;
+            }
+
+            .user-info {
+                font-size: 35px;
+                color: #989398;
+                animation: leftAnimation 1.4s linear 1 forwards;
+            }
+
+            .btn {
+                padding: 19px 55px;
+                font-size: 40px;
+                background-color: #001FDB;
+                display: inline-block;
+                margin-top: 43px;
+                animation: leftAnimation 1.5s linear 1 forwards;
+            }
+        }
+
+        .right {
+            .right-img {
+                animation: rightAnimation 1.5s linear 1 forwards;
+            }
+        }
+    }
+}
+
+
+
+@keyframes leftAnimation {
+    from {
+        transform: translateX(-100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightAnimation {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
