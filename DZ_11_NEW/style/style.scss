@@ -11,7 +11,7 @@
 }
 
 :root {
-    img{
+    img {
         width: 100%;
     }
 }
@@ -60,14 +60,17 @@ body {
                 .my-shake {
                     animation: shakeX 2s infinite;
                 }
-                .my-swing{
+
+                .my-swing {
                     animation: swing 2s infinite;
                 }
-                .my-woble{
+
+                .my-woble {
                     animation: wobble 2s infinite;
                 }
             }
-            .my-pulse{
+
+            .my-pulse {
                 animation: pulse 1s infinite;
             }
 
