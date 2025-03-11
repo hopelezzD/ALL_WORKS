@@ -1,0 +1,53 @@
+:root {
+    --borderOrange: 4px solid orange;
+    --borderGrey: 4px solid grey;
+    --fz: 24px;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: var(--fz);
+    font-weight: 700;
+    color: grey;
+}
+
+.header {
+    width: 800px;
+    height: 200px;
+    border: var(--borderOrange);
+    box-sizing: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    
+}
+
+.nav {
+    width: 100px;
+    height: 400px;
+    border: var(--borderOrange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 700px;
+    border: var(--borderOrange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 800px;
+    height: 200px;
+    border: var(--borderGrey);
+    box-sizing: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

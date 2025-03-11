@@ -1,0 +1,12 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+p{
+    font-weight: 700;
+    font-size: 40px;
+}
+.name,
+.city{
+    text-transform: capitalize;
+}

@@ -1,0 +1,11 @@
+var userCity= prompt("Ваше Місто");
+var userAge=prompt("Ваш вік");
+var userName=prompt("Ваше ім'я");
+document.write("<p class=city>Ваше Місто : "+userCity +"</p>");
+document.write("<p class=age>Ваш вік : "+userAge +"</p>");
+document.write("<p class=name>Ваше ім'я : "+userName +"</p>");
+console.log("*Користувач*");
+console.log("Ім'я : " +userName);
+console.log("Вік : "+userAge);
+console.log("Місто проживання : "+userCity);
+console.log("*Кінець виводу*");
